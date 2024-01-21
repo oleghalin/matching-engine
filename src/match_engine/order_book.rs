@@ -18,8 +18,8 @@ pub struct Order {
 
 #[derive(Debug)]
 pub struct OrderBook {
-    asks: HashMap<Decimal, VecDeque<Order>>,
-    bids: HashMap<Decimal, VecDeque<Order>>,
+    asks: HashMap<Price, VecDeque<Order>>,
+    bids: HashMap<Price, VecDeque<Order>>,
 }
 
 impl OrderBook {
